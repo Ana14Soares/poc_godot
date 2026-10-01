@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cvv1gu5gjeefc"]
+
+[ext_resource type="Script" uid="uid://bill4bsjncvq6" path="res://scripts/defletor.gd" id="1_mduhn"]
+[ext_resource type="Texture2D" uid="uid://gx1xihdbejvu" path="res://assets/sprites/fruit.png" id="1_mn35n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eabt8"]
+radius = 4.0
+
+[node name="defletor" type="Area2D" unique_id=670256287]
+script = ExtResource("1_mduhn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=572873976]
+texture = ExtResource("1_mn35n")
+region_enabled = true
+region_rect = Rect2(0, 32, 16, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=278180344]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_eabt8")

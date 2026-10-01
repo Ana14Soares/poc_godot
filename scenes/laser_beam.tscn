@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://kcdu6vvqy17q"]
+
+[ext_resource type="Script" uid="uid://5njjj68xagtc" path="res://scripts/laser_beam.gd" id="1_5ua82"]
+
+[node name="laser_beam" type="RayCast2D" unique_id=1710601549]
+target_position = Vector2(0, 160)
+script = ExtResource("1_5ua82")
+
+[node name="laser" type="Line2D" parent="." unique_id=505120160]
+points = PackedVector2Array(0, 0, 0, 150)
+width = 5.0
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
